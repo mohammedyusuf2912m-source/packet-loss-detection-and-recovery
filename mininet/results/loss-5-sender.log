@@ -1,0 +1,58 @@
+Sending 20 packets to 10.0.0.2:5001
+Sending packet 1
+ACK received for packet 1
+Sending packet 2
+ACK received for packet 2
+Sending packet 3
+Timeout waiting for ACK 3
+Retransmitting packet 3, attempt 1
+ACK received for packet 3
+Packet 3 recovered in 1.002 seconds after 1 retransmission(s)
+Controller response: BACKUP (loss: 33.33%)
+Sending packet 4
+ACK received for packet 4
+Sending packet 5
+ACK received for packet 5
+Sending packet 6
+ACK received for packet 6
+Sending packet 7
+ACK received for packet 7
+Sending packet 8
+ACK received for packet 8
+Sending packet 9
+ACK received for packet 9
+Sending packet 10
+ACK received for packet 10
+Sending packet 11
+ACK received for packet 11
+Sending packet 12
+ACK received for packet 12
+Sending packet 13
+ACK received for packet 13
+Sending packet 14
+ACK received for packet 14
+Sending packet 15
+ACK received for packet 15
+Sending packet 16
+ACK received for packet 16
+Sending packet 17
+ACK received for packet 17
+Sending packet 18
+ACK received for packet 18
+Sending packet 19
+ACK received for packet 19
+Sending packet 20
+ACK received for packet 20
+
+Sender statistics
+-----------------
+Original packets attempted: 20
+Total transmissions: 21
+Packets acknowledged: 20
+Packets requiring retransmission: 1
+Total retransmissions: 1
+Successful delivery ratio: 100.00%
+Retransmission rate: 4.76%
+Successfully recovered packets: 1
+Average recovery time: 1.002 seconds
+Maximum recovery time: 1.002 seconds

@@ -1,0 +1,5 @@
+configured_loss_pct,packets_sent,total_transmissions,packets_acknowledged,packets_requiring_retransmission,total_retransmissions,delivery_ratio_pct,retransmission_rate_pct,average_recovery_time_s
+0,20,20,20,0,0,100.00,0.00,
+5,20,21,20,1,1,100.00,4.76,1.002
+10,20,20,20,0,0,100.00,0.00,
+20,20,20,20,0,0,100.00,0.00,

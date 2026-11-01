@@ -1,0 +1,48 @@
+Receiver listening on port 5001
+Received packet 1: Hello from packet 1
+ACK sent for packet 1
+Received packet 2: Hello from packet 2
+ACK sent for packet 2
+Received packet 3: Hello from packet 3
+ACK sent for packet 3
+Received packet 4: Hello from packet 4
+ACK sent for packet 4
+Received packet 5: Hello from packet 5
+ACK sent for packet 5
+Received packet 6: Hello from packet 6
+ACK sent for packet 6
+Received packet 7: Hello from packet 7
+ACK sent for packet 7
+Received packet 8: Hello from packet 8
+ACK sent for packet 8
+Received packet 9: Hello from packet 9
+ACK sent for packet 9
+Received packet 10: Hello from packet 10
+ACK sent for packet 10
+Received packet 11: Hello from packet 11
+ACK sent for packet 11
+Received packet 12: Hello from packet 12
+ACK sent for packet 12
+Received packet 13: Hello from packet 13
+ACK sent for packet 13
+Received packet 14: Hello from packet 14
+ACK sent for packet 14
+Received packet 15: Hello from packet 15
+ACK sent for packet 15
+Received packet 16: Hello from packet 16
+ACK sent for packet 16
+Received packet 17: Hello from packet 17
+ACK sent for packet 17
+Received packet 18: Hello from packet 18
+ACK sent for packet 18
+Received packet 19: Hello from packet 19
+ACK sent for packet 19
+Received packet 20: Hello from packet 20
+ACK sent for packet 20
+
+Sender finished transmission.
+
+Receiver statistics
+-------------------
+Packets delivered: 20
+Simulated packet drops: 0
