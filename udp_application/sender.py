@@ -75,7 +75,6 @@ try:
                 json.dumps(packet).encode(),
                 receiver_address
             )
-
             packets_sent += 1
             attempts_for_packet += 1
 
@@ -139,6 +138,8 @@ try:
             print(f"ERROR: Packet {seq} could not be delivered.")
             print("Stopping transmission.")
             break
+
+    report_loss(0)
 
     finish_message = {
         "type": "FIN"

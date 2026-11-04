@@ -6,7 +6,11 @@ ACK received for packet 2
 Sending packet 3
 ACK received for packet 3
 Sending packet 4
+Timeout waiting for ACK 4
+Retransmitting packet 4, attempt 1
 ACK received for packet 4
+Packet 4 recovered in 1.003 seconds after 1 retransmission(s)
+Controller response: BACKUP (loss: 25.00%)
 Sending packet 5
 ACK received for packet 5
 Sending packet 6
@@ -14,7 +18,11 @@ ACK received for packet 6
 Sending packet 7
 ACK received for packet 7
 Sending packet 8
+Timeout waiting for ACK 8
+Retransmitting packet 8, attempt 1
 ACK received for packet 8
+Packet 8 recovered in 1.003 seconds after 1 retransmission(s)
+Controller response: BACKUP (loss: 25.00%)
 Sending packet 9
 ACK received for packet 9
 Sending packet 10
@@ -22,7 +30,11 @@ ACK received for packet 10
 Sending packet 11
 ACK received for packet 11
 Sending packet 12
+Timeout waiting for ACK 12
+Retransmitting packet 12, attempt 1
 ACK received for packet 12
+Packet 12 recovered in 1.005 seconds after 1 retransmission(s)
+Controller response: BACKUP (loss: 25.00%)
 Sending packet 13
 ACK received for packet 13
 Sending packet 14
@@ -30,7 +42,11 @@ ACK received for packet 14
 Sending packet 15
 ACK received for packet 15
 Sending packet 16
+Timeout waiting for ACK 16
+Retransmitting packet 16, attempt 1
 ACK received for packet 16
+Packet 16 recovered in 1.005 seconds after 1 retransmission(s)
+Controller response: BACKUP (loss: 25.00%)
 Sending packet 17
 ACK received for packet 17
 Sending packet 18
@@ -38,15 +54,22 @@ ACK received for packet 18
 Sending packet 19
 ACK received for packet 19
 Sending packet 20
+Timeout waiting for ACK 20
+Retransmitting packet 20, attempt 1
 ACK received for packet 20
+Packet 20 recovered in 1.002 seconds after 1 retransmission(s)
+Controller response: BACKUP (loss: 25.00%)
+Controller response: PRIMARY (loss: 0.00%)
 
 Sender statistics
 -----------------
 Original packets attempted: 20
-Total transmissions: 20
+Total transmissions: 25
 Packets acknowledged: 20
-Packets requiring retransmission: 0
-Total retransmissions: 0
+Packets requiring retransmission: 5
+Total retransmissions: 5
 Successful delivery ratio: 100.00%
-Retransmission rate: 0.00%
-No packets required successful retransmission.
+Retransmission rate: 20.00%
+Successfully recovered packets: 5
+Average recovery time: 1.004 seconds
+Maximum recovery time: 1.005 seconds

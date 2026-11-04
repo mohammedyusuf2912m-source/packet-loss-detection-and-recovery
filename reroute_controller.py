@@ -165,7 +165,18 @@ class RerouteController(app_manager.RyuApp):
                     parser.OFPMatch(in_port=next_hop, eth_dst=H1_MAC),
                     1
                 )
+                # Allow communication with the API host on S1 port 4
+                self.add_flow(
+                    dp, 100,
+                    parser.OFPMatch(in_port=1, eth_dst="02:00:00:00:00:fe"),
+                    4
+                )
 
+                self.add_flow(
+                    dp, 100,
+                    parser.OFPMatch(in_port=4, eth_dst=H1_MAC),
+                    1
+                )
             elif dpid == 2 and not backup:
 
                 self.add_flow(
@@ -245,10 +256,10 @@ class RerouteController(app_manager.RyuApp):
         )
 
         # Update the state of this particular primary-path port.
-        self.primary_port_up[key] = not bool(
-            msg.desc.state & dp.ofproto.OFPPS_LINK_DOWN
+        self.primary_port_up[key] = (
+        bool(msg.desc.state & dp.ofproto.OFPPS_LIVE)
+        and not bool(msg.desc.state & dp.ofproto.OFPPS_LINK_DOWN)
         )
-
         # The primary path has failed if ANY monitored port is down.
         primary_failed_now = not all(self.primary_port_up.values())
 
